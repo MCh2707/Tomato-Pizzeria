@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TOMATO PIZZA</title>
+    <link rel="icon" type="image/png" href="img/logo.png" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li class="nav-logo-li">
+          <img src="img/logo.png" alt="site logo" class="nav-logo" />
+        </li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="toppings">
+        <h1>Toppings</h1>
+
+        <ul class="toppings-list">
+          <li>
+            <img
+              src="img/tomato-sauce.png"
+              alt="Tomato Sauce"
+              class="addon"
+              id="tomato-sauce"
+            />
+          </li>
+          <li>
+            <img
+              src="img/cheese.png"
+              alt="Mozzarella"
+              class="addon"
+              id="cheese"
+            />
+          </li>
+
+          <li>
+            <img src="img/pepperoni.png" alt="Pepperoni" id="pepperoni" />
+          </li>
+          <li><img src="img/sausage.png" alt="Sausage" id="sausage" /></li>
+          <li>
+            <img
+              src="img/bell-pepper.png"
+              alt="bell peppers"
+              id="bell-pepper"
+            />
+          </li>
+
+          <li><img src="img/olives.png" alt="Olives" id="olives" /></li>
+          <li><img src="img/fungi.png" alt="mushrooms" id="fungi" /></li>
+        </ul>
+      </section>
+
+      <section id="pizza">
+        <div id="pizza-container">
+          <img src="img/dough.png" alt="" class="pizza-img" id="pizza-image" />
+          <img src="img/pizza-box-closed2.png" alt="" id="pizza-box-open" />
+          <img src="img/pizza-box-closed.png" alt="" id="pizza-box-closed" />
+        </div>
+      </section>
+
+      <section id="checkout">
+        <h1>Receipt</h1>
+        <hr />
+
+        <p>Personal Information</p>
+        <form action="">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name"
+          />
+
+          <label for="address">Address</label>
+          <input
+            type="text"
+            name="address"
+            id="address"
+            placeholder="Enter your address"
+          />
+
+          <label for="phone">Phone</label>
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="Enter your phone number"
+          />
+        </form>
+        <hr />
+
+        <p>Payment Information</p>
+        <form action="">
+          <label for="card-number">Card Number</label>
+          <input
+            type="text"
+            name="card-number"
+            id="card-number"
+            placeholder="Enter your card number"
+          />
+
+          <label for="expiration-date">Expiration Date</label>
+          <input
+            type="text"
+            name="expiration-date"
+            id="expiration-date"
+            placeholder="MM/YY"
+          />
+        </form>
+        <hr />
+
+        <label for="pizza-size">Size</label>
+        <select id="pizza-size" name="pizza-size">
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+        </select>
+        <hr />
+
+        <p>Recipe</p>
+        <ul id="recipe-list" class="recipe-list"></ul>
+        <p>Delivery: $3.00</p>
+        <p id="pizza-total">Total: $0.00</p>
+
+        <button id="place-order">Place Order</button>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
