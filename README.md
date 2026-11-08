@@ -1,6 +1,6 @@
 # Tomato-Pizzeria
 
-Tomato Pizzeria is a pizza ordering website concept built with HTML, CSS, and JavaScript. The project focuses on creating a visually engaging and interactive pizza customization experience.
+Tomato Pizzeria is a simple pizza ordering website . The project focuses on creating a visually engaging and interactive pizza customization experience.
 
 https://mch2707.github.io/Tomato-Pizzeria/
 
